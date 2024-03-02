@@ -11,7 +11,6 @@ level_1 = {
     'constraints': '../levels/level_1/level_1_constraints.csv',
     'player': '../levels/level_1/level_1_player.csv',
     'lock': '../levels/level_1/level_1_lock.csv',
-    'grass': '../levels/level_1/level_1_grass.csv',
     'node_pos': (110, 400),
     'unlock': 1,
     'node_graphics': '../graphics/overworld/0'}
@@ -29,7 +28,6 @@ level_2 = {
     'constraints': '../levels/level_2/level_2_constraints.csv',
     'player': '../levels/level_2/level_2_player.csv',
     'lock': '../levels/level_2/level_2_lock.csv',
-    'grass': '../levels/level_2/level_2_grass.csv',
     'node_pos': (300, 220),
     'unlock': 2,
     'node_graphics': '../graphics/overworld/1'}
@@ -43,10 +41,10 @@ level_3 = {
     'crates': '../levels/level_3/level_3_crates.csv',
     'enemies': '../levels/level_3/level_3_enemies.csv',
     'thwomp': '../levels/level_3/level_3_thwomp.csv',
+    'lock': '../levels/level_3/level_3_lock.csv',
     'bowser': '../levels/level_3/level_3_bowser.csv',
     'constraints': '../levels/level_3/level_3_constraints.csv',
     'player': '../levels/level_3/level_3_player.csv',
-    'grass': '../levels/level_3/level_3_grass.csv',
     'node_pos': (480, 610),
     'unlock': 3,
     'node_graphics': '../graphics/overworld/2'}
@@ -54,11 +52,16 @@ level_3 = {
 level_4 = {
     'terrain': '../levels//level_4/level_4_terrain.csv',
     'coins': '../levels/level_4/level_4_coins.csv',
+    'billy_bomb': '../levels/level_4/level_4_billy_bomb.csv',
+    'boobytrap': '../levels/level_4/level_4_boobytrap.csv',
+    'lootbox': '../levels/level_4/level_4_lootbox.csv',
     'crates': '../levels/level_4/level_4_crates.csv',
     'enemies': '../levels/level_4/level_4_enemies.csv',
+    'thwomp': '../levels/level_4/level_4_thwomp.csv',
+    'bowser': '../levels/level_4/level_4_bowser.csv',
     'constraints': '../levels/level_4/level_4_constraints.csv',
     'player': '../levels/level_4/level_4_player.csv',
-    'grass': '../levels/level_4/level_4_grass.csv',
+    'lock': '../levels/level_4/level_4_lock.csv',
     'node_pos': (610, 350),
     'unlock': 4,
     'node_graphics': '../graphics/overworld/3'}

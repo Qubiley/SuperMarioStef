@@ -151,11 +151,6 @@ class Level:
                             tile_surface = bomb_tile_list[int(val)]
                             sprite = StaticTile(tile_size, x, y, tile_surface)
 
-                    if type == 'grass':
-                        grass_tile_list = import_cut_graphics('../graphics/decoration/grass/grass.png')
-                        tile_surface = grass_tile_list[int(val)]
-                        sprite = StaticTile(tile_size, x, y, tile_surface)
-
                     if type == 'crates':
                         crates_tile_list = import_cut_graphics('../graphics/terrain/crate.png')
                         tile_surface = crates_tile_list[int(val)]
@@ -198,7 +193,7 @@ class Level:
                 x = col_index * tile_size
                 y = row_index * tile_size
                 if val == '0':  # player
-                    sprite = Player((x, y), self.display_surface, self.create_jump_particles, change_health, 'ice                                             ',
+                    sprite = Player((x, y), self.display_surface, self.create_jump_particles, change_health, '0',
                                     'sonic')
                     self.player.add(sprite)
                 if val == '1':  # goal
@@ -326,6 +321,7 @@ class Level:
                 if lootbox_bottom > player_top:
                     if self.player.sprite.direction.x == 0:
                         self.lootbox_sound.play()
+                        print('hit')
                         if self.player.sprite.power == '0':
                             self.activated_lootbox.add(StaticTile(tile_size, lootbox.rect.x, lootbox.rect.y,
                                                                   pygame.image.load(
